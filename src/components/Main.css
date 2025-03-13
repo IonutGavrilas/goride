@@ -1,0 +1,267 @@
+.main-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  top: 100px;
+  padding: 0 20px;
+}
+
+.main-container .intro .intro-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.main-container .intro-wrapper .intro-wrapper-img {
+  height: 600px;
+  width: 60%; 
+  background-color: #737496;
+  border-radius: 75% 30% 75% 30%;
+  box-shadow: 28px 18px 18px rgba(175, 215, 146, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container .intro-wrapper .intro-wrapper-img img {
+  height: 550px !important;
+  width: auto; 
+  object-fit: contain;
+  max-height: none;
+}
+
+.main-container .intro-wrapper .intro-wrapper-msg {
+  height: 100%;
+  width: 40%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.main-container .intro-wrapper .intro-wrapper-msg h1 { 
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.main-container .intro-wrapper .intro-wrapper-msg h1 b { 
+  font-size: 48px;
+  font-weight: 800;
+  text-decoration: underline red;
+}
+
+.main-container .intro-wrapper .intro-wrapper-msg h5 { 
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.main-container .intro-wrapper .intro-wrapper-msg .joinNow {
+  text-decoration: none;
+  color: white;
+  background-color: #737496;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 8px 16px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.main-container .intro-wrapper .intro-wrapper-msg .joinNow:hover {
+  background-color: #afd792;
+  color: #216631;
+  transform: scale(1.05);
+}
+
+/* How It Works Section */
+.how-it-works {
+  height: auto; 
+  max-width: 1200px;
+  margin: 35px auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.how-it-works .how-it-works-title {
+  padding: 30px;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.how-it-works .cards {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 55px;
+  padding: 40px;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+
+}
+
+.how-it-works .cards .card {
+  background-color: #737496;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(64, 69, 121, 0.4);
+  border: 3px solid #737496;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-it-works .cards .findMore-card {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.how-it-works .cards .findMore-card .findMore {
+  background-color: #9c26c1;
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 16px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.how-it-works .cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Rates section */
+.rates {
+  height: 500px;
+  max-width: 1200px;
+  border: 3px solid #afd792;
+  border-radius: 50px;
+  margin: 5px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.rates .rates-title {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.rates .rates-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  color: #505054;
+}
+
+.rates .rates-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: #216631;
+  font-size: 20px;
+  margin: 20px;
+  height: 250px;
+}
+
+
+
+.rates .rates-content .rates-text {
+  font-weight: 800;
+  padding-right: 10px;
+}
+
+.rates .rates-content .rates-bar {
+  border-right: 1px solid grey;
+  height: 70px;
+}
+
+.rates-text-promo {
+  margin-left: 5px;
+}
+
+.rates .rates-content .rates-text-promo-accent {
+  color: #9c26c1;
+}
+
+.rates .rates-car {
+  height: 250px !important;
+  width: auto; 
+  object-fit: contain;
+  max-height: none;
+  background-color: #737496;
+  border-radius: 50%;
+  box-shadow: 10px 10px 6px rgba(110, 112, 144, 0.6);
+}
+
+.rates .rates-car img {
+  height: 350px !important;
+  width: auto;
+  object-fit: contain;
+}
+
+.rates .rates-btn {
+  text-decoration: none;
+  color: white;
+  background-color: #216631;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.rates .rates-btn:hover {
+  background-color:#afd792;
+  transform: scale(1.05);
+}
+
+/* Media Queries for Full Responsiveness */
+@media (max-width: 1024px) {
+  .main-container .intro .intro-wrapper {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .main-container .intro-wrapper .intro-wrapper-img,
+  .main-container .intro-wrapper .intro-wrapper-msg {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-container .intro-wrapper .intro-wrapper-img img {
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-it-works .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-it-works .cards .card {
+    max-width: 90%;
+  }
+
+  .rates .rates-content {
+    flex-direction: column;
+  }
+}

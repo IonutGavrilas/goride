@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+import React, { Suspense } from 'react';
+import { Route, Routes, NavLink } from 'react-router-dom';
 import './App.css';
+import Layout from './components/Layout';
+
+// Lazy-loading pages
+const HomePage = React.lazy(() => import('./pages/HomePage'));
+const AuthPage = React.lazy(() => import('./pages/AuthPage'));
+const SignUpPage = React.lazy(() => import('./pages/SignUpPage'));
+const Locations = React.lazy(() => import('./pages/Locations'));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <nav>
+        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
+          Home
+        </NavLink>
+        <NavLink to="/auth" className={({ isActive }) => (isActive ? 'active' : '')}>
+          Auth
+        </NavLink>
+        <NavLink to="/signup" className={({ isActive }) => (isActive ? 'active' : '')}>
+        SignUp
+        </NavLink>
+      </nav>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/auth" element={<AuthPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/locations" element={<Locations />} />
+          <Route path="*" element={<div>404 - Page Not Found</div>} />
+        </Routes>
+      </Suspense>
+    </Layout>
   );
 }
 
