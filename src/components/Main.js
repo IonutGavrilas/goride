@@ -1,7 +1,8 @@
 import "./Main.css";
 import { Link } from "react-router-dom";
-import car from "../assets/hyundai i20.png";
+import car from "../assets/GoLocal.png";
 import phoneImage from "../assets/phone.png";
+import Footer from "./Footer";
 
 const Main = () => {
   return (
@@ -80,14 +81,15 @@ const Main = () => {
         <h3 className="rates-text rates-bar">De la 20Lei pe ora  </h3>
         <h3 className="rates-text rates-bar">Primii 50km gratis  </h3>
         <div className="rates-text-promo">
-          <h3 className="rates-text">1,25Lei pe km</h3>
-          <p className="rates-text-promo-accent">1Leu pe km la rezervarile de peste 6 ore</p>
+          <h3 className="rates-text">0,75Lei pe km</h3>
+          <p className="rates-text-promo-accent">0,5Lei pe km la rezervarile de peste 6 ore</p>
         </div>
         </div>
         <Link to="/rates">
             <button className="rates-btn">Vezi toate tarifele</button>
           </Link>
       </section>
+      
     </main>
   );
 };

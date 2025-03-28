@@ -8,6 +8,7 @@ const HomePage = React.lazy(() => import('./pages/HomePage'));
 const AuthPage = React.lazy(() => import('./pages/AuthPage'));
 const SignUpPage = React.lazy(() => import('./pages/SignUpPage'));
 const Locations = React.lazy(() => import('./pages/Locations'));
+const Rates = React.lazy(() => import('./pages/Rates'));
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/rates" element={<Rates />} />
           <Route path="/locations" element={<Locations />} />
           <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Routes>

@@ -29,9 +29,9 @@ const Navigation = () => {
       </div>
       <nav className={`nav-menu ${menuOpen ? "open" : ""}`}>
         <ul>
-          <li><Link to="/instructions" onClick={() => setMenuOpen(false)}>Cum functioneaza?</Link></li>
-          <li><Link to="/rates" onClick={() => setMenuOpen(false)}>Tarife</Link></li>
-          <li><Link to="/locations" onClick={() => setMenuOpen(false)}>Locatii</Link></li>
+          <li><Link to="/instructions" className="menu-option" onClick={() => setMenuOpen(false)}>Cum functioneaza?</Link></li>
+          <li><Link to="/rates" className="menu-option" onClick={() => setMenuOpen(false)}>Tarife</Link></li>
+          <li><Link to="/locations" className="menu-option" onClick={() => setMenuOpen(false)}>Locatii</Link></li>
           <Link to="/signup"><button className='joinNow-mobile' onClick={toggleSignUp}>Alatura-te acum!</button></Link>
           <Link to="/auth"><button className='login-mobile' onClick={toggleAuth}>Log in</button></Link>
         </ul>

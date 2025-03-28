@@ -1,0 +1,71 @@
+.rates-container {
+    width: 95%;
+    margin: 80px auto;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+  }
+  
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    grid-auto-rows: 350px;
+    margin: 40px;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 20px;
+    border: 3px solid #afd792;
+  }
+  
+  .car-name-type {
+    font-size: 2rem;
+    color: #737496;
+    font-weight: 800;
+    padding: 20px;
+  }
+
+  .car-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  .car-image {
+    width: 210px;
+    height: 120px;
+  }
+  
+  .car-price {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #9c26c1;
+  }
+  
+  .car-price-day {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: green;
+  }
+
+  .car-features-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+  }
+
+  .car-features {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
