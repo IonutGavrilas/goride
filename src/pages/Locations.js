@@ -3,7 +3,7 @@ import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 import { MarkerClusterer } from "@googlemaps/markerclusterer";
 import "./Locations.css";
 
-const defaultCenter = { lat: 45.7489, lng: 21.2087 }; // Timișoara, Romania
+const defaultCenter = { lat: 45.7489, lng: 21.2087 };
 
 const locations = [
   { lat: 45.7640, lng: 21.2250 },
@@ -77,6 +77,18 @@ const Locations = memo(() => {
 
   return (
     <div className="locations">
+      <h1 className="locations-title">Cauta vehiculul potrivit</h1>
+      <div className="locations-vehicle-type-container">
+        <div className="vehicle-type-container">
+        <label className="vehicle-type-label">Tip vehicul</label>
+        <select className="vehicle-type-select">
+          <option value="car">Select</option>
+        </select>
+        </div>
+        <button className="vehicle-type-search-btn">
+        Cauta
+      </button>
+      </div>
       <div className="map-container">
       <GoogleMap
         onLoad={onMapLoad}

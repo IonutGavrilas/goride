@@ -237,7 +237,6 @@
 }
   
 
-/* Media Queries for Full Responsiveness */
 @media (max-width: 900px) {
   .main-container .intro .intro-wrapper {
     height: 400px;

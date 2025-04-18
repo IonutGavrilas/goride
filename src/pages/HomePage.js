@@ -1,4 +1,3 @@
-import './HomePage.css'
 import Main from "../components/Main";
 
 const HomePage = () => {

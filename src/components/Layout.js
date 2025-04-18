@@ -1,5 +1,4 @@
  import Navigation from "./Navigation";
- import './Layout.css';
 import React from 'react';
 import Footer from "./Footer";
 

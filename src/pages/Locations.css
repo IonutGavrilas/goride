@@ -1,24 +1,79 @@
-Container styling
-.map-container {
-    text-align: center;
-    margin: 120px auto;
-    height: 900px;
-    width: 100%;
-  }
+.locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
 
-  
-  .map-box {
-    width: 100%;
-    max-width: 1200px;
-    height: 500px;
-    margin: 100px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .error-message {
-    color: red;
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  
+.locations .locations-title {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.locations .locations-vehicle-type-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: end;
+  width: 40%;
+  margin-top: 60px;
+}
+
+.locations .locations-vehicle-type-container .vehicle-type-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.locations .locations-vehicle-type-container .vehicle-type-container .vehicle-type-label {
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.locations .locations-vehicle-type-container .vehicle-type-container .vehicle-type-select {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid rgb(160, 159, 160);
+  padding: 5px;
+}
+
+.locations .locations-vehicle-type-container .vehicle-type-search-btn {
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #afd792;
+  border: 2px solid #216631;
+  color: #216631;
+  font-size: 18px;
+}
+
+.locations .locations-vehicle-type-container .vehicle-type-search-btn:hover {
+  background-color: #216631;
+  color: white;
+  border: 2px solid #afd792;
+}
+
+.map-container {
+  text-align: center;
+  height: 700px;
+  width: 100%;
+}
+
+
+.map-box {
+  width: 100%;
+  max-width: 1400px;
+  height: 500px;
+  margin: 60px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+  color: red;
+  font-size: 18px;
+  margin-top: 100px;
+}

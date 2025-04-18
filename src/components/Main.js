@@ -60,7 +60,15 @@ const Main = () => {
           </div>
           <div className="card">
             <div className="card-content">
-              <h3 className="card-title"><b className="card-no">05</b> Returneaza masina</h3>
+              <h3 className="card-title"><b className="card-no">05</b> Alimenteaza</h3>
+              <p className="card-body">
+              Nu uita sa alimentezi masina inainte de a o returna.
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="card-content">
+              <h3 className="card-title"><b className="card-no">06</b> Returneaza masina</h3>
               <p className="card-body">
               Returneaza masina in punctul din care ai preluat-o.
               </p>

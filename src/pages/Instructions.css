@@ -1,0 +1,177 @@
+.instructions-main-container {
+    width: 100%;
+    margin: 80px auto;
+}
+
+.instructions-main-container .instructions-intro .instructions-intro-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    color: #afd792;
+    background-color: #737496;
+  }
+  
+  .instructions-main-container .instructions-intro-wrapper .instructions-intro-wrapper-img {
+    height: 600px;
+    width: 50%; 
+    background-color: #737496;
+    border-radius: 75% 30% 75% 30%;
+    box-shadow: 28px 18px 18px rgba(175, 215, 146, 0.6);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .instructions-main-container .instructions-intro-wrapper .instructions-intro-wrapper-img .instructions-intro-car {
+    height: 550px;
+    width: auto; 
+  }
+  
+  .instructions-main-container .instructions-intro-wrapper .instructions-intro-wrapper-msg {
+    height: 100%;
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .instructions-main-container .instructions-intro-wrapper .instructions-intro-wrapper-msg h1 { 
+    font-size: 48px;
+    font-weight: 800;
+  }
+
+  
+  .instructions-main-container .instructions-intro-wrapper .instructions-intro-wrapper-msg .instructions-intro-text { 
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+  }
+
+
+  /* How It Works Section */
+.instructions-how-it-works {
+    height: auto; 
+    max-width: 1200px;
+    margin: 25px auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .instructions-how-it-works .instructions-how-it-works-title {
+    padding: 30px;
+    font-size: 45px;
+    font-weight: 800;
+    color: #afd792;
+  }
+  
+  .instructions-how-it-works .instructions-cards {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 55px;
+    padding: 40px;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+  
+  }
+  
+  .instructions-how-it-works .instructions-cards .instructions-card {
+    background-color: #737496;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(64, 69, 121, 0.4);
+    border: 3px solid #737496;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  /* Perks section */
+ .perks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .perks-title {
+    padding: 30px;
+    font-size: 45px;
+    font-weight: 800;
+    color: #afd792;
+ }
+
+ .perks-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: #474848;
+    text-align: center;
+ }
+
+ .perks-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+ }
+
+ .perks-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #737496;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(64, 69, 121, 0.4);
+ }
+
+ @media (max-width: 1230px) {
+  .instructions-main-container {
+    margin: 70px auto;
+}
+
+.instructions-main-container .instructions-intro-wrapper .instructions-intro-wrapper-msg h1 { 
+  font-size: 38px;
+}
+}
+
+
+ @media (max-width: 1080px) {
+  .instructions-main-container {
+    margin: 60px auto;
+}
+  
+  .instructions-main-container .instructions-intro-wrapper .instructions-intro-wrapper-msg h1 { 
+    font-size: 34px;
+  }
+
+  
+  .instructions-main-container .instructions-intro-wrapper .instructions-intro-wrapper-msg .instructions-intro-text { 
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .instructions-main-container {
+    margin: 60px auto;
+  } 
+}
